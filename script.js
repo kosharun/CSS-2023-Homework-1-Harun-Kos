@@ -6,6 +6,7 @@ const questions = [
     b: "Coding Style Sheets",
     c: "Cascading Simple Sheets",
     d: "Cars SUVs & Sailboats",
+    e: "CODE SAMPLE SPAM",
     correct: "a",
   },
   {
@@ -14,6 +15,7 @@ const questions = [
     b: "2021",
     c: "2022",
     d: "2023",
+    e: "2000",
     correct: "b",
   },
   {
@@ -22,7 +24,26 @@ const questions = [
     b: "Bosnia and Herzegovina Futures Foundation",
     c: "Bosnia and Herzegovina Factory Foundation",
     d: "none of the above",
+    e: "Serbia Islamic foundation",
     correct: "b",
+  },
+  {
+    question: "1+1=",
+    a: "1",
+    b: "2",
+    c: "3",
+    d: "4",
+    e: "5",
+    correct: "b",
+  },
+  {
+    question: "3+3=",
+    a: "222",
+    b: "1",
+    c: "2",
+    d: "6",
+    e: "111",
+    correct: "d",
   },
 ];
 
@@ -34,6 +55,7 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
+const e_text = document.getElementById("e_text");
 const submitButton = document.getElementById("submit");
 
 //Counters
@@ -63,6 +85,7 @@ const loadQuiz = () => {
   b_text.innerText = currentQuizData.b;
   c_text.innerText = currentQuizData.c;
   d_text.innerText = currentQuizData.d;
+  e_text.innerText = currentQuizData.e;
 };
 
 //Loading the quiz
